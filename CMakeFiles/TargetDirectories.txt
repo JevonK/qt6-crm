@@ -1,0 +1,9 @@
+/Volumes/anjie/Project/C++/crm/CMakeFiles/crm.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/edit_cache.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/rebuild_cache.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/list_install_components.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/install.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/install/local.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/install/strip.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/crm_autogen_timestamp_deps.dir
+/Volumes/anjie/Project/C++/crm/CMakeFiles/crm_autogen.dir

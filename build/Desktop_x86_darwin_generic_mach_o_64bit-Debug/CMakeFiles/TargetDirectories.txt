@@ -1,0 +1,9 @@
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/crm.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/edit_cache.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/list_install_components.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/install.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/install/local.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/install/strip.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/crm_autogen_timestamp_deps.dir
+/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/crm_autogen.dir

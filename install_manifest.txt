@@ -1,0 +1,2 @@
+/Volumes/anjie/Tmp/qt6/./crm.app/Contents/MacOS/crm
+/Volumes/anjie/Tmp/qt6/./crm.app/Contents/Info.plist
