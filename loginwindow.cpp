@@ -34,7 +34,6 @@ loginwindow::~loginwindow()
 void loginwindow::on_pushButton_clicked()
 {
     // 获取参数
-    MainWindow *mainUi = new MainWindow();
     QString username = ui->lineEdit->text();
     QString password = ui->lineEdit_2->text();
     // 验证参数不能为空
@@ -54,20 +53,23 @@ void loginwindow::on_pushButton_clicked()
     QSqlQuery query(sql);
     int usernameNo = query.record().indexOf("username");
     int idNo = query.record().indexOf("admin_id");
-    QSettings settings;
+    QSettings settings("myCompany", QSettings::IniFormat);
     while (query.next()) {
+        qDebug() << "user:" << query.value(idNo).toString();
         // 设置登录参数
-        qDebug() << query.value(idNo).toString() << query.value(usernameNo).toString();
-        settings.setValue("isLogin", 1);
-        settings.setValue("userid", query.value(idNo).toString());
-        settings.setValue("username", query.value(usernameNo).toString());
+        settings.setValue("users/isLogin", 1);
+        settings.setValue("users/userid", query.value(idNo).toString());
+        settings.setValue("users/username", query.value(usernameNo).toString());
+        settings.sync();
 
         // 关闭当前ui，打开主页
         this->close();
+        MainWindow *mainUi = new MainWindow();
         mainUi->show();
+        return;
     }
 
-    if (settings.value("isLogin").toInt() != 1)
+    if (settings.value("users/isLogin").toInt() != 1)
     {
         QMessageBox::critical(this, tr("提示"), tr("用户名或密码错误"));
         return;

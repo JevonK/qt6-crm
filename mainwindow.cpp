@@ -14,11 +14,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QSettings settings;
+    QSettings settings("myCompany", QSettings::IniFormat);
 
     // 获取用户id
-    int userid = settings.value("userid").toInt();
-    qDebug() << userid;
+    int userid = settings.value("users/userid").toInt();
+    qDebug() << "userid:" << userid;
 
     // 查询数据
     QSqlTableModel *model = new QSqlTableModel;

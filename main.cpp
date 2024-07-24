@@ -27,24 +27,31 @@ int main(int argc, char *argv[])
     db.setDatabaseName("crm6.me");  //Mysql 创建的数据库名称
     db.setUserName("root");
     db.setPassword("");    //安装 Mysql 设置的密码
+    bool ok = db.open();
+    if (ok){
+        qDebug() << "mysql link success";
+    }
+    else {
+        qDebug() <<  "mysql link failed";
+    }
 
-    MainWindow w;
-    loginwindow *loginUi = new loginwindow();
     // 判断是否登录
-    QSettings settings;
-    settings.clear();
-    QString isLogin = settings.value("isLogin").toString();
+    QSettings settings("myCompany", QSettings::IniFormat);
+    QString isLogin = settings.value("users/isLogin").toString();
     if (isLogin != "1")
     {
+        loginwindow *loginUi = new loginwindow();
         loginUi->show();
     } else {
+        MainWindow w;
         w.show();
     }
 
     int nRut = a.exec();
     if(0 == nRut)
     {
-        settings.setValue("isLogin", "0");
+        // settings.setValue("isLogin", "0");
+        settings.clear();
         db.close();
     }
     return nRut;
