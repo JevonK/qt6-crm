@@ -411,6 +411,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Volumes/anjie/Project/C++/crm/customwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_customwindow.cpp",
+			null
+		],
+		[
 			"/Volumes/anjie/Project/C++/crm/loginwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_loginwindow.cpp",
@@ -482,6 +488,7 @@
 	"SETTINGS_FILE" : "/Volumes/anjie/Project/C++/crm/CMakeFiles/crm_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Volumes/anjie/Project/C++/crm/customwindow.cpp", "MU", null ],
 		[ "/Volumes/anjie/Project/C++/crm/loginwindow.cpp", "MU", null ],
 		[ "/Volumes/anjie/Project/C++/crm/main.cpp", "MU", null ],
 		[ "/Volumes/anjie/Project/C++/crm/mainwindow.cpp", "MU", null ]

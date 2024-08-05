@@ -515,11 +515,14 @@ crm_autogen/timestamp: \
 	/Volumes/anjie/Project/C++/crm/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	/Volumes/anjie/Project/C++/crm/CMakeLists.txt \
 	/Volumes/anjie/Project/C++/crm/crm_autogen/moc_predefs.h \
+	/Volumes/anjie/Project/C++/crm/customwindow.cpp \
+	/Volumes/anjie/Project/C++/crm/customwindow.h \
 	/Volumes/anjie/Project/C++/crm/loginwindow.cpp \
 	/Volumes/anjie/Project/C++/crm/loginwindow.h \
 	/Volumes/anjie/Project/C++/crm/main.cpp \
 	/Volumes/anjie/Project/C++/crm/mainwindow.cpp \
 	/Volumes/anjie/Project/C++/crm/mainwindow.h \
+	/Volumes/anjie/Project/C++/crm/customwindow.ui \
 	/Volumes/anjie/Project/C++/crm/loginwindow.ui \
 	/Volumes/anjie/Project/C++/crm/mainwindow.ui \
 	/Volumes/anjie/MacApp/Qt/Tools/CMake/CMake.app/Contents/bin/cmake

@@ -81,6 +81,14 @@ build CMakeFiles/crm.dir/loginwindow.cpp.o: CXX_COMPILER__crm_unscanned_Debug /V
   OBJECT_DIR = CMakeFiles/crm.dir
   OBJECT_FILE_DIR = CMakeFiles/crm.dir
 
+build CMakeFiles/crm.dir/customwindow.cpp.o: CXX_COMPILER__crm_unscanned_Debug /Volumes/anjie/Project/C++/crm/customwindow.cpp || cmake_object_order_depends_target_crm
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/crm.dir/customwindow.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Volumes/anjie/Project/C++/crm/crm_autogen/include -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtCore.framework/Headers -iframework /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/mkspecs/macx-clang -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/include -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtWidgets.framework/Headers -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtGui.framework/Headers -isystem /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtSql.framework/Headers
+  OBJECT_DIR = CMakeFiles/crm.dir
+  OBJECT_FILE_DIR = CMakeFiles/crm.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target crm
@@ -89,7 +97,7 @@ build CMakeFiles/crm.dir/loginwindow.cpp.o: CXX_COMPILER__crm_unscanned_Debug /V
 #############################################
 # Link the executable crm.app/Contents/MacOS/crm
 
-build crm.app/Contents/MacOS/crm: CXX_EXECUTABLE_LINKER__crm_Debug CMakeFiles/crm.dir/crm_autogen/mocs_compilation.cpp.o CMakeFiles/crm.dir/main.cpp.o CMakeFiles/crm.dir/mainwindow.cpp.o CMakeFiles/crm.dir/loginwindow.cpp.o | /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtSql.framework/Versions/A/QtSql /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/QtGui /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtCore.framework/Versions/A/QtCore || crm_autogen crm_autogen_timestamp_deps
+build crm.app/Contents/MacOS/crm: CXX_EXECUTABLE_LINKER__crm_Debug CMakeFiles/crm.dir/crm_autogen/mocs_compilation.cpp.o CMakeFiles/crm.dir/main.cpp.o CMakeFiles/crm.dir/mainwindow.cpp.o CMakeFiles/crm.dir/loginwindow.cpp.o CMakeFiles/crm.dir/customwindow.cpp.o | /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtSql.framework/Versions/A/QtSql /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/QtGui /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtCore.framework/Versions/A/QtCore || crm_autogen crm_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Volumes/anjie/MacApp/Qt/6.7.2/macos/lib  /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtSql.framework/Versions/A/QtSql  /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/QtGui  -framework OpenGL  -framework AGL  -framework AppKit  -framework ImageIO  -framework Metal  /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
   LINK_PATH = -F/Volumes/anjie/MacApp/Qt/6.7.2/macos/lib
@@ -175,7 +183,7 @@ build crm_autogen_timestamp_deps: phony
 #############################################
 # Utility command for crm_autogen
 
-build crm_autogen: phony CMakeFiles/crm_autogen crm_autogen/include/ui_mainwindow.h crm_autogen/include/ui_loginwindow.h crm_autogen/timestamp crm_autogen/mocs_compilation.cpp crm_autogen_timestamp_deps
+build crm_autogen: phony CMakeFiles/crm_autogen crm_autogen/include/ui_mainwindow.h crm_autogen/include/ui_loginwindow.h crm_autogen/include/ui_customwindow.h crm_autogen/timestamp crm_autogen/mocs_compilation.cpp crm_autogen_timestamp_deps
 
 
 #############################################
@@ -192,7 +200,7 @@ build crm_autogen/timestamp crm_autogen/mocs_compilation.cpp | ${cmake_ninja_wor
 #############################################
 # Phony custom command for CMakeFiles/crm_autogen
 
-build CMakeFiles/crm_autogen crm_autogen/include/ui_mainwindow.h crm_autogen/include/ui_loginwindow.h | ${cmake_ninja_workdir}CMakeFiles/crm_autogen ${cmake_ninja_workdir}crm_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}crm_autogen/include/ui_loginwindow.h: phony crm_autogen/timestamp || crm_autogen_timestamp_deps
+build CMakeFiles/crm_autogen crm_autogen/include/ui_mainwindow.h crm_autogen/include/ui_loginwindow.h crm_autogen/include/ui_customwindow.h | ${cmake_ninja_workdir}CMakeFiles/crm_autogen ${cmake_ninja_workdir}crm_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}crm_autogen/include/ui_loginwindow.h ${cmake_ninja_workdir}crm_autogen/include/ui_customwindow.h: phony crm_autogen/timestamp || crm_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

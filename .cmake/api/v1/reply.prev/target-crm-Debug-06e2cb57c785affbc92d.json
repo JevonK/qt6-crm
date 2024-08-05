@@ -72,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 75,
+				"line" : 77,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 58,
+				"line" : 60,
 				"parent" : 0
 			},
 			{
@@ -478,8 +478,7 @@
 				3,
 				6,
 				9,
-				10,
-				11
+				10
 			]
 		},
 		{
@@ -489,14 +488,14 @@
 				4,
 				5,
 				8,
-				12
+				11
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13
+				12
 			]
 		}
 	],
@@ -551,11 +550,6 @@
 			"backtrace" : 4,
 			"path" : "loginwindow.ui",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "base.h",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,

@@ -43,15 +43,14 @@ int main(int argc, char *argv[])
         loginwindow *loginUi = new loginwindow();
         loginUi->show();
     } else {
-        MainWindow w;
-        w.show();
+        MainWindow *w = new MainWindow();
+        w->show();
     }
 
     int nRut = a.exec();
     if(0 == nRut)
     {
-        // settings.setValue("isLogin", "0");
-        settings.clear();
+        // settings.clear();
         db.close();
     }
     return nRut;

@@ -46,9 +46,11 @@ set(OLD_GLOB
   "/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/crm_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/crm_autogen/mocs_compilation.cpp"
   "/Volumes/anjie/Project/C++/crm/build/Qt_6_7_2_for_macOS-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "/Volumes/anjie/Project/C++/crm/crm_autogen/EWIEGA46WW/moc_customwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/EWIEGA46WW/moc_loginwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/mocs_compilation.cpp"
+  "/Volumes/anjie/Project/C++/crm/customwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/loginwindow.cpp"
   "/Volumes/anjie/Project/C++/crm/main.cpp"
   "/Volumes/anjie/Project/C++/crm/mainwindow.cpp"
@@ -72,9 +74,11 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Volumes/anjie/Project/C++/cr
 set(OLD_GLOB
   "/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/crm_autogen/include/ui_mainwindow.h"
   "/Volumes/anjie/Project/C++/crm/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/crm_autogen/moc_predefs.h"
+  "/Volumes/anjie/Project/C++/crm/crm_autogen/include/ui_customwindow.h"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/include/ui_loginwindow.h"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/include/ui_mainwindow.h"
   "/Volumes/anjie/Project/C++/crm/crm_autogen/moc_predefs.h"
+  "/Volumes/anjie/Project/C++/crm/customwindow.h"
   "/Volumes/anjie/Project/C++/crm/loginwindow.h"
   "/Volumes/anjie/Project/C++/crm/mainwindow.h"
   )
@@ -176,6 +180,7 @@ endif()
 # _directory_contents at /Volumes/anjie/MacApp/Qt/6.7.2/macos/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Volumes/anjie/Project/C++/crm/*.ui")
 set(OLD_GLOB
+  "/Volumes/anjie/Project/C++/crm/customwindow.ui"
   "/Volumes/anjie/Project/C++/crm/loginwindow.ui"
   "/Volumes/anjie/Project/C++/crm/mainwindow.ui"
   )
