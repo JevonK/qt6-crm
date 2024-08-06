@@ -54,7 +54,7 @@ void CustomWindow::on_previous_page_clicked()
     current_page_num--;
     int userid = settings.value("users/userid").toInt();
     QSqlTableModel *model = new QSqlTableModel;
-    QString sql = this->getList(userid);
+    QString sql = this->getList(userid,current_page_num);
     model->setQuery(sql);
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     model->select();
@@ -64,6 +64,7 @@ void CustomWindow::on_previous_page_clicked()
     model->setHeaderData(3, Qt::Horizontal, tr("状态"));
     ui->admin->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->admin->setModel(model);
+    ui->current_page_num->setText(QString::number(current_page_num));
 }
 
 
@@ -85,7 +86,7 @@ void CustomWindow::on_next_page_clicked()
     current_page_num++;
     int userid = settings.value("users/userid").toInt();
     QSqlTableModel *model = new QSqlTableModel;
-    QString sql = this->getList(userid);
+    QString sql = this->getList(userid,current_page_num);
     model->setQuery(sql);
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     model->select();
@@ -95,5 +96,6 @@ void CustomWindow::on_next_page_clicked()
     model->setHeaderData(3, Qt::Horizontal, tr("状态"));
     ui->admin->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->admin->setModel(model);
+    ui->current_page_num->setText(QString::number(current_page_num));
 }
 

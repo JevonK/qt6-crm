@@ -23,7 +23,7 @@ private slots:
 private:
     Ui::CustomWindow *ui;
 
-    QString getList(int prUser, int page = 1, int limit = 10)
+    QString getList(int prUser, int page = 1, int limit = 15)
     {
         page -= 1;
         page *= 10;
