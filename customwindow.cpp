@@ -97,6 +97,7 @@ void CustomWindow::on_next_page_clicked()
     ui->admin->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->admin->setModel(model);
     ui->current_page_num->setText(QString::number(current_page_num));
+
 }
 
  void tableList(int page, int pageSize)
