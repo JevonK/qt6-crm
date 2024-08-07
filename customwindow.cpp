@@ -99,3 +99,22 @@ void CustomWindow::on_next_page_clicked()
     ui->current_page_num->setText(QString::number(current_page_num));
 }
 
+ void tableList(int page, int pageSize)
+{
+    Ui::CustomWindow *ui = new Ui::CustomWindow;
+    QSettings settings("myCompany", QSettings::IniFormat);
+    int userid = settings.value("users/userid").toInt();
+    QSqlTableModel *model = new QSqlTableModel;
+    QString sql = CustomWindow::getList(userid,page);
+    model->setQuery(sql);
+    model->setEditStrategy(QSqlTableModel::OnManualSubmit);
+    model->select();
+    model->setHeaderData(0, Qt::Horizontal, CustomWindow::tr("序号"));
+    model->setHeaderData(1, Qt::Horizontal, CustomWindow::tr("手机号"));
+    model->setHeaderData(2, Qt::Horizontal, CustomWindow::tr("负责人"));
+    model->setHeaderData(3, Qt::Horizontal, CustomWindow::tr("状态"));
+    ui->admin->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->admin->setModel(model);
+    ui->current_page_num->setText(QString::number(page));
+}
+
