@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     db.setPort(3306);
     db.setDatabaseName("crm6.me");  //Mysql 创建的数据库名称
     db.setUserName("root");
-    db.setPassword("");    //安装 Mysql 设置的密码
+    db.setPassword("123456");    //安装 Mysql 设置的密码
     bool ok = db.open();
     if (ok){
         qDebug() << "mysql link success";
